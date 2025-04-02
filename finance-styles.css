@@ -1,0 +1,142 @@
+/* Budget Warning Styles */
+.budget-alert {
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  transition: all 0.3s ease;
+}
+
+.budget-alert.warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border-left: 5px solid #ffeeba;
+}
+
+.budget-alert.danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-left: 5px solid #f5c6cb;
+}
+
+.budget-alert.hidden {
+  display: none;
+}
+
+/* Transaction Controls */
+.transaction-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.search-box {
+  position: relative;
+  flex: 1;
+}
+
+.search-box i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px 8px 8px 35px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.sort-controls select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 150px;
+}
+
+/* Transaction List */
+.transaction-list {
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.transaction-item {
+  padding: 12px 15px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Expense Form */
+.expense-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.expense-form input,
+.expense-form select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.expense-form button {
+  grid-column: span 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .transaction-controls {
+    flex-direction: column;
+  }
+  
+  .expense-form {
+    grid-template-columns: 1fr;
+  }
+  
+  .expense-form button {
+    grid-column: span 1;
+  }
+}
