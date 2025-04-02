@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý tài chính cá nhân</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="beginning">
+      <div class="content">📒 Tài Chính Cá Nhân K24_Rikkei</div>
+      <div class="head">
+        <button class="logout-button">Tài khoản</button>
+        <a href=""><i class="fa-solid fa-chevron-down"></i></a>
+      </div>
+    </div>
+    <div class="tbody">
+      <div class="main">
+        <h2>🎯 Kiểm soát chi tiêu thông minh</h2>
+        <p>Theo dõi ngân sách và thu chi hằng tháng dễ dàng</p>
+      </div>
+      <div class="auxiliary">
+        <div class="content">📊 Quản Lý Tài Chính Cá Nhân</div>
+        <div class="container">
+          <span> 📅 Chọn tháng:</span>
+          <input type="month" id="monthSelect" />
+        </div>
+        <div class="container2">
+          <span>💰 Ngân sách tháng:</span>
+          <input type="number" id="budgetInput" placeholder="VD 5000000" />
+          <button id="saveBudgetBtn">Lưu</button>
+        </div>
+        <!-- Include all other container divs with their elements -->
+        <script src="index.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
